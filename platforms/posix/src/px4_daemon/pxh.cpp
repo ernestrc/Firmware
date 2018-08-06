@@ -134,7 +134,7 @@ void Pxh::run_pxh()
 
 	_setup_term();
 
-	std::string mystr = "";
+	std::string mystr;
 	int cursor_position = 0; // position of the cursor from right to left
 	// (0: all the way to the right, mystr.length: all the way to the left)
 

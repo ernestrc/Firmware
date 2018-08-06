@@ -156,7 +156,6 @@ Server::_server_main(void *arg)
 	}
 
 	close(client_send_pipe_fd);
-	return;
 }
 
 void
