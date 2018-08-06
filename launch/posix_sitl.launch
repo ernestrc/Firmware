@@ -41,7 +41,6 @@
     </include>
     <!-- gazebo model -->
     <node name="$(anon vehicle_spawn)" pkg="gazebo_ros" type="spawn_model" output="screen" args="-sdf -file $(arg sdf) -model $(arg vehicle) -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)"/>
-</launch>
 
     <!-- This will set the environment variable needed to select iris in the startup. -->
     <machine name="px4" env-loader="iris_env.sh" address="none" />
