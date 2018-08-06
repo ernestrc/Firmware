@@ -154,7 +154,7 @@ function(px4_posix_generate_symlinks)
 			set(ln_name "${PREFIX}${MAIN}")
 			add_custom_command(TARGET ${TARGET}
 				POST_BUILD
-				COMMAND ln -s -f ${TARGET} ${ln_name}
+				COMMAND ${CMAKE_COMMAND} -E create_symlink ${TARGET} ${ln_name}
 				WORKING_DIRECTORY "${CMAKE_RUNTIME_OUTPUT_DIRECTORY}"
 			)
 		endif()
